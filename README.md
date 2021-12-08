@@ -1,4 +1,4 @@
-# Readme
+# Companion Plant Finder
 
 This code attempts to find companion plants - that is, plants that commonly grow in close proximity to each other - via analysis of iNaturalist data. To do this, it searches for all plants recorded within one km of the target plant, and assigns them a relevance score based on their distance away both from the target plant and from the nearest urban area[^1].
 
@@ -8,6 +8,8 @@ In essence, this creates an ***n x n*** correlation matrix, in which the maximal
 
 <center>
 
-![doop](CodeCogsEqn.svg)
+![the score as a function of D sub a b; D sub nearest urban; and p sub nearest urban is defined to be the sum over all occurances within a kilometer range of D sub a b to the minus 2 times paren p sub nearest urban over D sub nearest urban close-paren to the minus 1.](CodeCogsEqn.svg)
 
 </center>
+
+where **D~a,b~** represents the distance between the target plant and the potential companion, **D~urban,nearest~** represents the distance to the nearest urban area, and **p~urban,nearest~** represents the population density of that nearest area.
