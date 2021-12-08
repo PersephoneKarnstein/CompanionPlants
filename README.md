@@ -12,4 +12,4 @@ In essence, this creates an ***n x n*** correlation matrix, in which the maximal
 
 </center>
 
-where **D~a,b~** represents the distance between the target plant and the potential companion, **D~urban,nearest~** represents the distance to the nearest urban area, and **p~urban,nearest~** represents the population density of that nearest area.
+where **D<sub>a,b</sub>** represents the distance between the target plant and the potential companion, **D<sub>urban,nearest</sub>** represents the distance to the nearest urban area, and **p<sub>urban,nearest</sub>** represents the population density of that nearest area.
